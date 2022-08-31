@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" ",
+    "my-custom-start": "PROD=true npm run dev"
   },
   "proxy": "http://localhost:8000",
   "repository": {
@@ -19,5 +20,6 @@
   "homepage": "https://github.com/nikhilbhave9/notion-flashcards#readme",
   "devDependencies": {
     "concurrently": "^7.3.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
